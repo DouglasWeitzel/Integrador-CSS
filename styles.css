@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'ubuntu', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+/*             HEADER                   */
+
+.header-container{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    max-width: 1300px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container{
+    width: 50%;
+    height: 100px;
+    display: flex;
+}
+
+.logo-container a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.navbar{
+    width: 50%;
+    height: 100%;
+}
+
+#menu-desplegable, #toggle-menu{
+    display: none;
+}
+
+.navbar-list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+/*               HERO                */
+
+.hero-container{
+    width: 100%;
+}
+
+#hero{
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#hero img{
+    width: 100%;
+    margin: 25px 0 0 0;
+}
+
+
+/*       PC ARMADA           */
+
+.pcarmada-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pcarmada{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.pcarmada-card{
+width: 300px;
+height: 400px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.pcarmada-card a{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: initial;
+}
+
+.pcarmada-card img{
+    width: 300px;
+}
+
+
+/*                      PRODUCTOS                        */
+
+.productos-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#productos{
+    height: 1230px;
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.search input{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.search button{
+    width: 100px;
+    height: 30px;
+    border: solid 2px  ;
+    border-radius: 5px;
+}
+
+.search input:hover{
+    box-shadow: 0px 0px 5px 5px#d77104;
+    transition: 0.5s;
+}
+
+.productoscard-container{
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.productos-card{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.productos-card a{
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.productos-card  a img{
+    width: 200px;
+}
+
+.acontainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*                          FOOTER                         */
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer-container{
+    width: 100%;
+    max-width: 1300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#contactanos{
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer ul{
+    width: 300px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer ul div {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer ul div a{
+    width: 30px;
+    height: 30px;
+}
+
+footer ul div a i{
+    font-size: 2rem;
+}
+
+.derechos{
+    width: 100%;
+    max-width: 1300px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 68px;
+}
+
+:root{
+    --black: rgb(0, 0, 0);
+    --white: #ffffff;
+    --orangered: #d77104;
+    --gray: #263238;
+    --violet: #7b5bbd;
+}
