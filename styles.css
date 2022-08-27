@@ -15,6 +15,7 @@ html{
 }
 
 body{
+    background-color: #7b5bbd;
     display: flex;
     flex-direction: column;
     justify-content: center;
