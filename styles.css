@@ -29,6 +29,10 @@ main{
     gap: 30px;
 }
 
+a{
+    color: black;
+}
+
 a:hover{
     cursor: pointer;
 }
@@ -100,8 +104,22 @@ header{
     font-size: 20px;
 }
 
+.navbar-list a{
+    color: black;
+}
 
-/*               HERO                */
+.navbar-list a:hover{
+    color: #d77104;
+    transition: 0.5s;
+}
+
+.navbar-list p:hover{
+    color: #d77104;
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+/*               ---------------- HERO -----------------               */
 
 .hero-container{
     width: 100%;
@@ -124,7 +142,7 @@ header{
 }
 
 
-/*                      PRODUCTOS                        */
+/*              -----------------PRODUCTOS----------------                        */
 
 .productos-container{
     width: 100%;
@@ -154,22 +172,42 @@ header{
 }
 
 .search input{
-    width: 80%;
-    height: 30px;
-    border-radius: 5px;
+    display: flex;
+    gap: 20px;
 }
 
-.search button{
-    width: 100px;
+.search input{
+    width: 80%;
     height: 30px;
-    border: solid 2px  ;
-    border-radius: 5px;
+    border-radius: 0px;
+    border-bottom: 3px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
 
 .search input:hover{
     box-shadow: 0px 0px 5px 5px#d77104;
     transition: 0.5s;
 }
+
+
+
+.search button{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #d77104;
+    color: white;
+    cursor: pointer;
+}
+
+.search button:active{
+    background-color: black;
+}
+
 
 .productoscard-container{
     width: 100%;
@@ -198,10 +236,17 @@ header{
     justify-content: center;
     align-items: center;
     text-align: center;
+    gap: 10px;
+}
+
+.productos-card h2:hover{
+    color: #d77104;
+    transition: 0.5s;
 }
 
 .productos-card  a img{
     width: 200px;
+    gap: 40px;
 }
 
 .acontainer{
@@ -212,7 +257,20 @@ header{
     justify-content: space-around;
 }
 
-/*       PC ARMADA           */
+.acontainer button{
+    width: 100px;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #d77104;
+    color: white;
+}
+
+.acontainer button:active{
+    background-color: black;
+}
+
+/*       --------------- PC ARMADA ---------------           */
 
 .pcarmada-container{
     width: 100%;
@@ -248,15 +306,20 @@ justify-content: center;
     justify-content: center;
     align-items: center;
     text-align: initial;
+    gap: 15px;
+}
+
+.pcarmada-card a:hover{
+    transition: .5s;
+    transform: scale(1.05);
+    color: #d77104;
 }
 
 .pcarmada-card img{
     width: 300px;
 }
 
-
-
-/*                          FOOTER                         */
+/*         ----------------- FOOTER -----------------             */
 
 footer{
     margin: 30px 0 0 0;
@@ -311,6 +374,12 @@ footer ul div a{
 
 footer ul div a i{
     font-size: 2rem;
+}
+
+footer ul div a i:hover{
+    transition: .5s;
+    transform: scale(1.2);
+    color: #d77104;
 }
 
 .derechos{
