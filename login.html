@@ -5,29 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
     <title>Login-GamerStore</title>
 </head>
 <body>
-    <div>
+    <main>
         <div class="loginheader-container">
-            <header>
-            <a href="./index.html"><i class="fa-solid fa-arrow-rotate-left"></i>Inicio</a>
-            <img src="./assets/index/GS_isologo-07.svg" alt="">
+            <header id="loginheader">
+                <a href="./index.html"><i class="fa-solid fa-arrow-rotate-left"></i>Inicio</a>
+                <img src="./assets/index/GS_isologo-07.svg" alt="Logo">
+            </header>
         </div>
-        <form action="#">
+        <span class="divider"></span>
+        <form id="loginform" action="#">
             <h3>Iniciar sesión</h3>
-            <div>
-            <input type="text" placeholder="Email" required>
-            <input type="password" placeholder="Contraseña" required>
-            <input type="checkbox" name="Check" id="">
-            <label for="check">Mantenerme logueado</label>
+            <div class="inputdiv">
+                <input type="text" placeholder="Email" required>
+                <input type="password" placeholder="Contraseña" required>
+                <div>
+                    <input type="checkbox" name="Check" id="">
+                    <label for="check">Mantenerme logueado</label>
+                </div>
             </div>
-            <div>
-            <p><a href="#">Olvidé mi contraseña.</a></p>
-            <p><a href="register.html">Crear Cuenta</a></p>
-            <input type="submit" value="Login">
+            <div class="loginform2">
+                <p><a href="#">Olvidé mi contraseña.</a></p>
+                <p><a href="register.html">Crear Cuenta</a></p>
+                <input type="submit" value="Login">
             </div>
         </form>
+        <span class="divider"></span>
+    </main>
 </body>
 <footer>
     <h5>2022 DouglasTeam © Todos los derechos reservados (?)</h5>

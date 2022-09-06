@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap');
+
+:root{
+    --black: rgb(0, 0, 0);
+    --white: #ffffff;
+    --orangered: #d77104;
+    --gray: #263238;
+    --violet: #7b5bbd;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'ubuntu', sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.divider {
+    width: 100%;
+    max-width: 1300px;
+    height: 5px;
+    background-color: var(--orangered);
+  }
+
+@media (min-width: 0px) and (max-width: 768px) {
+    .loginheader-container{
+        width: 100%;
+    }
+    
+    #loginheader{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: left;
+    }
+    
+    #loginheader img{
+        width: 250px;
+    }
+
+    #loginform{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .inputdiv{
+        display: flex;
+        flex-direction: column;
+        text-align: initial;
+        gap: 10px;
+    }
+
+    .loginform2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+}

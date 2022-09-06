@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap');
 
+:root{
+    --black: rgb(0, 0, 0);
+    --white: #ffffff;
+    --orangered: #d77104;
+    --gray: #263238;
+    --violet: #7b5bbd;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -389,12 +397,4 @@ footer ul div a i:hover{
     display: flex;
     align-items: center;
     padding-left: 68px;
-}
-
-:root{
-    --black: rgb(0, 0, 0);
-    --white: #ffffff;
-    --orangered: #d77104;
-    --gray: #263238;
-    --violet: #7b5bbd;
 }
