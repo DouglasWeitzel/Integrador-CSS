@@ -37,10 +37,18 @@ a{
     background-color: var(--orangered);
   }
 
+#loginfooter{
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+
 @media (min-width: 0px) and (max-width: 768px) {
     
     .loginheader-container{
         width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     #loginheader{
@@ -54,7 +62,7 @@ a{
     
     #loginheader img{
     margin: auto;
-        width: 150px;
+        width: 200px;
     }
 
     #loginheader a{
@@ -117,9 +125,178 @@ a{
         background-color: black;
     }
 
-    #loginfooter{
-        margin: 10px 0 0 0;
-        text-align: center;
+}
+
+
+
+/*   --------------------RESPONSIVE 780px----------------------    */
+
+
+@media (min-width: 769px) and (max-width: 1279px) {
+    .loginheader-container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #loginheader{
+        margin: 20px 0 10px 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    #loginheader img{
+    margin: auto;
+        width: 400px;
     }
 
+    #loginheader a{
+        padding-left: 10px;
+    }
+
+    #loginheader a img{
+        width: 18px;
+    }
+
+    #loginform{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .inputdiv{
+        display: flex;
+        flex-direction: column;
+        text-align: initial;
+        gap: 10px;
+    }
+
+    .inputdiv input{
+        margin: auto;
+        width: 230px;
+        height: 25px;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+
+    .inputdiv input::-webkit-input-placeholder{
+        font-size: 16px;
+        padding-left: 10px;
+    }
+
+    .loginform2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .loginform2 input{
+        width: 100px;
+        height: 30px;
+        border-radius: 5px;
+        border: 2px solid black;
+        border-radius: 5px;
+        background-color: #d77104;
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+    .loginform2 input:active{
+        background-color: black;
+    }
+}
+
+/*   --------------------RESPONSIVE 1280px----------------------    */
+
+@media (min-width: 1280px) {
+    .loginheader-container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #loginheader{
+        margin: 20px 0 10px 0;
+        height: 100%;
+        max-width: 1300px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    #loginheader img{
+        margin: auto;
+        width: 400px;
+    }
+
+    #loginheader a{
+        padding-left: 10px;
+    }
+
+    #loginheader a img{
+        width: 18px;
+    }
+
+    #loginform{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .inputdiv{
+        display: flex;
+        flex-direction: column;
+        text-align: initial;
+        gap: 10px;
+    }
+
+    .inputdiv input{
+        margin: auto;
+        width: 230px;
+        height: 25px;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+
+    .inputdiv input::-webkit-input-placeholder{
+        font-size: 16px;
+        padding-left: 10px;
+    }
+
+    .loginform2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .loginform2 input{
+        width: 100px;
+        height: 30px;
+        border-radius: 5px;
+        border: 2px solid black;
+        border-radius: 5px;
+        background-color: #d77104;
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+    .loginform2 input:active{
+        background-color: black;
+    }
 }
