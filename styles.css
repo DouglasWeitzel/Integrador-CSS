@@ -52,7 +52,103 @@ a:hover{
     background-color: var(--orangered);
   }
 
-/*             HEADER                   */
+
+
+/* --------------------------MEDIA--------------------- */
+
+/* --------------------------0 - 768------------------- */
+
+@media (min-width: 0) and (max-width: 768px) {
+
+ main{
+    text-align: center;
+ }
+
+ img {
+        width: 200px;
+ }
+/* -----------------------------HEADER-------------------- */
+
+ .header-container{
+    width: 100%;
+ }
+
+ .header{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+ }
+
+ .logo-container img{
+    width: 300px;
+ }
+ .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    
+ }
+
+ #toggle-menu{
+    display: none;
+ }
+
+ .navbar label{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .navbar i{
+    display: block;
+    font-size: 25px;
+ }
+
+ .navbar ul{
+    display: none;
+    background-color: var(--orangered);
+    width: 100%;
+    height: calc(60vh - 80px);
+    position: absolute;
+    top: 100px;
+    right: 0%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    font-size: 20px;
+    transform: translateX(200%);
+    transition: all 0.5s ease-out;
+ }
+
+ #toggle-menu:checked ~ .navbar-list{
+    display: flex;
+    transform: translateX(0);
+    transition: all 0.4s ease-in;
+ }
+
+
+
+ /* ------------------------HERO----------------- */
+
+ .hero-container{
+    display: none;
+ }
+
+}
+
+/* --------------------------769 - 1279------------------- */
+
+@media (min-width: 769) and (max-width: 1279px) {
+
+}
+
+
+@media (min-width: 1280px) {
+
+    /*             HEADER                   */
 
 .header-container{
     width: 100%;
@@ -62,6 +158,10 @@ a:hover{
     align-content: center;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 1;
 }
 
 header{
@@ -92,12 +192,18 @@ header{
     height: 100%;
 }
 
+/* ---------------------------NAV BAR ------------------------------- */
+
 .navbar{
     width: 50%;
     height: 100%;
 }
 
-#menu-desplegable, #toggle-menu{
+#toggle-menu{
+    display: none;
+}
+
+.navbar i{
     display: none;
 }
 
@@ -137,6 +243,7 @@ header{
 #hero{
     width: 100%;
     max-width: 1300px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -397,4 +504,6 @@ footer ul div a i:hover{
     display: flex;
     align-items: center;
     padding-left: 68px;
+}
+
 }
