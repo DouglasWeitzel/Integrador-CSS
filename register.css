@@ -15,4 +15,152 @@
     text-decoration: none;
     list-style: none;
     font-family: 'ubuntu', sans-serif;
+    font-size: 18px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.divider {
+    width: 100%;
+    max-width: 1300px;
+    height: 5px;
+    background-color: var(--orangered);
+  }
+       
+/* ---------------------------HEADER-------------------------- */
+.registerheader-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#registerheader{
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#registerheader img{
+    width: 250px;
+}
+
+/* -----------------------MAIN---------------------- */
+
+.registermain-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.registermain-container h3{
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+#registerform{
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#enviar{
+        width: 100px;
+        height: 30px;
+        border-radius: 5px;
+        border: 2px solid black;
+        border-radius: 5px;
+        background-color: #d77104;
+        color: white;
+        cursor: pointer;
+        font-size: 15px;
+    }
+
+/* -----------------------footer----------------------- */
+
+footer{
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+
+
+/* ----------------------------MEDIA------------------- */
+
+
+/* ---------------------------RESPONSIVE 0-768 */
+
+@media (min-width: 0px) and (max-width: 768px){
+
+.registermain-container h3{
+    font-size: 30px;
+}
+
+#registerform input{
+    width: 300px;
+}
+
+#check input{
+    width: 12px;
+}
+
+}
+
+/* -------------------------------- 769-1279-------------------- */
+
+@media (min-width: 769px) and (max-width: 1279px){
+
+    #registerheader img{
+        width: 400px;
+    }
+
+    .registermain-container h3{
+        font-size: 30px;
+    }
+    
+    #registerform input{
+        width: 300px;
+    }
+    
+    #check input{
+        width: 12px;
+    }
+}
+
+/* -------------------------------- 1280+ -------------------- */
+
+@media (min-width: 1280px){
+
+    #registerheader img{
+        width: 400px;
+    }
+
+    .registermain-container h3{
+        font-size: 30px;
+    }
+    
+    #registerform input{
+        width: 300px;
+    }
+    
+    #check input{
+        width: 12px;
+    }
 }

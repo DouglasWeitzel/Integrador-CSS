@@ -9,32 +9,36 @@
     <title>Register-GamerStore</title>
 </head>
 <body>
-    <div class="loginheader-container">
-        <header>
-        <a href="./index.html"><i class="fa-solid fa-arrow-rotate-left"></i>Inicio</a>
-        <img src="./assets/index/GS-GamerStore-isologotipo-07.svg" alt="">
-        <a href="./login.html">Iniciar sesión<i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+    <div class="registerheader-container">
+        <header id="registerheader">
+            <a href="./index.html"><i class="fa-solid fa-arrow-rotate-left"></i>Inicio</a>
+            <img src="./assets/index/GS-GamerStore-isologotipo-07.svg" alt="logo">
+            <a href="./login.html">Iniciar sesión<i class="fa-solid fa-arrow-right-to-bracket"></i></a>
         </header>
     </div>
-    <div class="register-container">
-        <div class="register-img">
+    <main>
+        <span class="divider"></span>
+        <div class="registermain-container">
+                <h3>Registrate!</h3>
+            <form id="registerform" action="#">
+                <label for="">Fecha de nacimiento:</label>
+                <input type="date" name="" required>
+                <input type="text" name="" id="" placeholder="Nombre y apellido" required>
+                <input type="number" name="" id="" placeholder="Código Postal" required>
+                <input type="text" name="" id="" placeholder="Ciudad" required>
+                <input type="text" name="" id="" placeholder="Pais" required>
+                <input type="text" name="" id="" placeholder="Dirección de email" required>
+                <input type="password" name="" id="" placeholder="Contraseña" required>
+                <input type="password" name="" id="" placeholder="Confirmar Contraseña" required>
+                <div id="check">
+                    <input type="checkbox" name="terms" id="">
+                    <label for="terms">acepto los terminos y condiciones</label>
+                </div>
+                <input id="enviar" type="submit" value="Registrarme" required>
+            </form>
         </div>
-        <div>
-            <h3>Registrate!</h3>
-        </div>
-        <form action="#">
-            <input type="text" name="" id="" placeholder="Nombre y apellido" required>
-            <label for="">Fecha de nacimiento:</label>
-            <input type="date" name="" required>
-            <input type="text" name="" id="" placeholder="Dirección de email" required>
-            <input type="number" name="" id="" placeholder="Código Postal" required>
-            <input type="text" name="" id="" placeholder="Ciudad" required>
-            <input type="text" name="" id="" placeholder="Pais" required>
-            <input type="password" name="" id="" placeholder="Contraseña" required>
-            <input type="password" name="" id="" placeholder="Confirmar Contraseña" required>
-            <input type="submit" value="Registrarme" required>
-        </form>
-    </div>
+        <span class="divider"></span>
+    </main>
 </body>
 <footer>
     <h5>2022 DouglasTeam © Todos los derechos reservados (?)</h5>
